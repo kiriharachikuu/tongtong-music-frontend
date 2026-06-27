@@ -8,7 +8,7 @@ import fs from 'fs';
 const pkg = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'package.json'), 'utf-8'));
 
 // 后端 API 地址（可在此处修改，或通过 .env 文件的 VITE_API_BASE 设置）
-const API_BASE = process.env.VITE_API_BASE || 'http://localhost:3000';
+const API_BASE = process.env.VITE_API_BASE || 'http://xtmusicapi.chikuu.top:3000/';
 
 export default defineConfig({
   plugins: [
@@ -19,8 +19,8 @@ export default defineConfig({
       includeAssets: ['apple-touch-icon.png'],
       manifest: {
         name: '瞳瞳音乐',
-        short_name: '瞳瞳',
-        description: 'Apple Music 风格音乐播放器',
+        short_name: '瞳音',
+        description: '星瞳专属的全栈音乐流媒体平台',
         theme_color: '#8B00FF',
         background_color: '#ffffff',
         display: 'standalone',
