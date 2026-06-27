@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia';
+import { setToken } from '../api/client';
 
 export const useUserStore = defineStore('user', {
   state: () => ({
@@ -13,8 +14,9 @@ export const useUserStore = defineStore('user', {
     setAuth(user, token) {
       this.user = user;
       this.token = token;
+      // 关键：同步更新 axios client 的模块级 accessToken，否则首次登录后请求拦截器仍使用旧值（空字符串）
+      setToken(token);
       if (user) localStorage.setItem('tt_user', JSON.stringify(user)); else localStorage.removeItem('tt_user');
-      if (token) localStorage.setItem('tt_token', token); else localStorage.removeItem('tt_token');
     },
     // 修改昵称：动态 import 避免循环依赖
     // 注意：client.js 响应拦截器已对 {code,data} 结构解包（return res.data.data），
