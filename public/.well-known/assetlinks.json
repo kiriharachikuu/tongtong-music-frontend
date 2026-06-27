@@ -3,8 +3,8 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.tongtong.music",
-      "sha256_cert_fingerprints": ["YOUR_SIGNING_CERT_FINGERPRINT"]
+      "package_name": "top.chikuu.xtmusic.twa",
+      "sha256_cert_fingerprints": ["57:8B:34:88:C5:BD:AD:04:E0:7D:A3:6F:A5:16:B6:BE:18:FF:D7:62:BB:D9:51:B4:4F:68:8D:AB:A4:67:3F:CD"]
     }
   }
 ]
