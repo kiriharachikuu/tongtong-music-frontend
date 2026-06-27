@@ -1,0 +1,14 @@
+瞳瞳音乐 (Tongtong Music) - 第三方组件声明
+
+本项目的歌词渲染组件基于 Apple Music-like Lyrics (AMLL)，遵循 AGPL-3.0 许可证。
+
+组件信息:
+  - 名称: @applemusic-like-lyrics/core
+  - 名称: @applemusic-like-lyrics/lyric
+  - 许可证: AGPL-3.0-only
+  - 源码: https://github.com/Steve-xmh/applemusic-like-lyrics
+
+根据 AGPL-3.0 第 13 条规定，如对本项目进行网络分发，需保留上述组件的源码获取途径与许可证声明。
+
+完整 AGPL-3.0 许可证文本请参见:
+https://www.gnu.org/licenses/agpl-3.0.txt
