@@ -1,4 +1,5 @@
 {
+  "trailingSlash": false,
   "rewrites": [
     {
       "source": "/api/:path*",
@@ -7,6 +8,15 @@
     {
       "source": "/uploads/:path*",
       "destination": "http://xtmusicapi.chikuu.top:3000/uploads/:path*"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/.well-known/(.*)",
+      "dest": "/public/.well-known/$1",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      }
     }
   ]
 }
