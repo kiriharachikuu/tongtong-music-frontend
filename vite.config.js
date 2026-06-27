@@ -8,7 +8,7 @@ import fs from 'fs';
 const pkg = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'package.json'), 'utf-8'));
 
 // 后端 API 地址（可在此处修改，或通过 .env 文件的 VITE_API_BASE 设置）
-const API_BASE = process.env.VITE_API_BASE || 'http://xtmusicapi.chikuu.top:3000/';
+const API_BASE = process.env.VITE_API_BASE || 'http://154.64.244.36:3000';
 
 export default defineConfig({
   plugins: [
